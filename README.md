@@ -86,7 +86,7 @@ WHERE Material_Used_kg > 0;
 
 [10000 rows x 3 columns]
 ```
-The full result of this query is available [here](results/material_efficiency.csv).
+The full result of this query is available [here](Assets/results/material_efficiency.csv).
 
 ---
 
@@ -122,7 +122,7 @@ WHERE Energy_Per_Unit > 0.2;
 
 [10000 rows x 2 columns]
 ```
-The full result of this query is available [here](results/energy_per_unit.csv).
+The full result of this query is available [here](Assets/results/energy_per_unit.csv).
 
 ---
 
@@ -151,7 +151,7 @@ Machine_ID  Year  Week Water_Savings_Pct
 8       M009  2009     3             20.00
 9       M010  2010     3             17.50
 ```
-The full result of this query is available [here](results/water_savings.csv).
+The full result of this query is available [here](Assets/results/water_savings.csv).
 
 ---
 
@@ -181,7 +181,7 @@ GROUP BY Machine_ID;
 8       M004              9
 9       M010             10
 ```
-The full result of this query is available [here](results/co2_emissions.csv).
+The full result of this query is available [here](Assets/results/co2_emissions.csv).
 
 ---
 
@@ -210,7 +210,7 @@ WHERE total_waste > 0.10 * (SELECT SUM(material_waste_kg) FROM sustainable_manuf
 2       M008      60000.0          45500.00
 3       M009      50000.0          45500.00
 ```
-The full result of this query is available [here](results/material_waste.csv).
+The full result of this query is available [here](Assets/results/material_waste.csv).
 
 ---
 
@@ -259,7 +259,7 @@ FROM last_week_tbl
 8       M009         71.11000000
 9       M010         65.79000000
 ```
-The full result of this query is available [here](results/weekly_comparison.csv).
+The full result of this query is available [here](Assets/results/weekly_comparison.csv).
 
 ---
 
@@ -286,7 +286,7 @@ WHERE WEEKDAY(date) IN (5,6)
 0  Weekday           285.0000
 1  Weekend           292.5000
 ```
-The full result of this query is available [here](results/weekend_vs_weekday.csv).
+The full result of this query is available [here](Assets/results/weekend_vs_weekday.csv).
 
 ---
 
@@ -324,7 +324,7 @@ WHERE m.machine_output < d.dept_avg_output
 1       M006
 2       M007
 ```
-The full result of this query is available [here](results/machine_benchmarking.csv).
+The full result of this query is available [here](Assets/results/machine_benchmarking.csv).
 
 ---
 
@@ -357,7 +357,7 @@ WHERE p.prod_rank <= 0.10
   Machine_ID
 0       M008
 ```
-The full result of this query is available [here](results/trade_off.csv).
+The full result of this query is available [here](Assets/results/trade_off.csv).
 
 ---
 
@@ -394,7 +394,7 @@ Empty DataFrame
 Columns: [Machine_ID, Date, Product_Output_Units, z_score]
 Index: []
 ```
-The full result of this query is available [here](results/output_inconsistency.csv).
+The full result of this query is available [here](Assets/results/output_inconsistency.csv).
 
 ---
 
@@ -425,7 +425,7 @@ Empty DataFrame
 Columns: [Machine_ID, Date, co2_pct, resource_pct]
 Index: []
 ```
-The full result of this query is available [here](results/resource_spikes.csv).
+The full result of this query is available [here](Assets/results/resource_spikes.csv).
 
 ---
 
@@ -469,7 +469,7 @@ FROM normalized;
 
 [10000 rows x 2 columns]
 ```
-The full result of this query is available [here](results/sustainability_index.csv).
+The full result of this query is available [here](Assets/results/sustainability_index.csv).
 
 ---
 
