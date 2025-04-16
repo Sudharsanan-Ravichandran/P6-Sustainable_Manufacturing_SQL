@@ -479,14 +479,14 @@ The full result of this query is available [here](Assets/results/sustainability_
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/sustainability-sql-project.git
-   cd sustainability-sql-project
+   git clone https://github.com/Sudharsanan-Ravichandran/P6-Sustainable_Manufacturing_SQL.git
+   cd P6-Sustainable_Manufacturing_SQL
    ```
 
 2. Import the dataset into your database:
    ```sql
-   LOAD DATA INFILE '/path/to/green_supply_chain_dataset.csv'
-   INTO TABLE green_supply_chain;
+   LOAD DATA INFILE '/path/to/Sustainable_Manufacturing_Large_Data.csv'
+   INTO TABLE sustainable_manufacturing;
    ```
 
 3. Run the queries using your preferred SQL client.
